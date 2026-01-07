@@ -6,7 +6,7 @@ A comprehensive inventory and item management system for Roblox, built with scal
 - **Dynamic Grid System**: Scrolling inventory with configurable slot capacity
 - **Smart Stacking**: Automatic item stacking with comfigurable stack limits
 - **Hotbar Integration**: Quick-access hotbar with keybind support (1-8 keys)
-- **Item Details Panel**: In-depth item information with equip/drop actions
+- **Item Details Panel**: In-depth item information with equip/drop actions and item rarities
 
 ### Item System
 - **Flexible Pickup Modes**:
@@ -15,6 +15,7 @@ A comprehensive inventory and item management system for Roblox, built with scal
     - **Instanced**: Each player can pick up their own copy (ideal for quest systems, etc)
 - **Type-Safe Item Definitions**: Weapons, consumables, materials, armour, and quest items
 - **Proximity-Based Pickups**: Intuitive interaction with world items whilst maintaining security
+- **Easy Item Implementation**: Easy to add new items with custom rarities, stats, types and more
 
 ### Architecture
 - **Server-Authoritative**: All game logic validated server-side to prevent exploits
