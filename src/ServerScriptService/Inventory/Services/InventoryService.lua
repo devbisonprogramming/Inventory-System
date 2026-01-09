@@ -16,7 +16,7 @@ function InventoryService.UseItem(player: Player, inventory: PlayerInventory, it
 	
 	-- Example functionality of how to link in to other in game systems
 	if item.itemType == "Weapon" then
-		-- EquipmentService.EquipWeapon(item)
+		-- EquipmentService.UseWeapon(item)
 	elseif item.itemType == "Armour" then
 		-- EquipmentService.EquipArmour(item)
 	elseif item.itemType == "Consumable" then
@@ -25,6 +25,8 @@ function InventoryService.UseItem(player: Player, inventory: PlayerInventory, it
 		-- CraftingService.CraftItem(item)
 	elseif item.itemType == "QuestItem" then
 		-- QuestService.IncrementQuest(item)
+	elseif item.itemType == "Shield" then
+		-- EquipmentService.UseShield(item)
 	else
 		-- Item has no item type, add handling here
 	end

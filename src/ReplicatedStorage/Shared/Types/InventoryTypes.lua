@@ -1,4 +1,4 @@
-export type ItemType = "Weapon"|"Consumable"|"Material"|"Armour"|"QuestItem"
+export type ItemType = "Weapon"|"Consumable"|"Material"|"Armour"|"QuestItem"|"Shield"
 
 export type Rarity = "Common"|"Uncommon"|"Rare"|"Epic"|"Legendary"|"Mythic"|"Divine"|"Exalted"|"Developer"
 
