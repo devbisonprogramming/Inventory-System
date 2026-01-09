@@ -7,6 +7,7 @@ A comprehensive inventory and item management system for Roblox, built with scal
 - **Smart Stacking**: Automatic item stacking with comfigurable stack limits
 - **Hotbar Integration**: Quick-access hotbar with keybind support (1-8 keys)
 - **Item Details Panel**: In-depth item information with equip/drop actions and item rarities
+- **Item Sorting Modes**: Items can be sorted by None, Name, Quantity, Rarity, or Type, in both ascending and descending order
 
 ### Item System
 - **Flexible Pickup Modes**:
