@@ -1,4 +1,5 @@
 # Modular Inventory & Item System
+
 <p align="left">
   <img src="media/inventory.png" width="400" alt="Preview">
 </p>
