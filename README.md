@@ -1,6 +1,9 @@
 # Modular Inventory & Item System
-A comprehensive inventory and item management system for Roblox, built with scalability and maintainability in mind.
+<p align="left">
+  <img src="media/inventory.png" width="400" alt="Preview">
+</p>
 
+A comprehensive inventory and item management system for Roblox, built with scalability and maintainability in mind.
 ## Features
 ### Inventory Management
 - **Dynamic Grid System**: Scrolling inventory with configurable slot capacity
@@ -96,4 +99,28 @@ local inventory = InventoryManager.GetInventory(player)
 local ItemService = require(path.to.ItemService)
 ItemService.UseItem(player, "health_potion")
 ```
-This function is also where other systems in game can be linked for different item types usage, such as combat system etc.
+This function is also where other systems in game can be linked for different item types usage, such as combat system etc. Systems can be linked in as such:
+```lua
+function InventoryService.UseItem(player: Player, inventory: PlayerInventory, itemId: string, itemIndex: number)
+	local item = ItemData.Items[itemId]
+	if not item then
+		warn(`No item named {itemId} in ItemData for {player.DisplayName}`)
+	end
+	print(`{player.DisplayName} used {item.name} of type {item.itemType}`)
+	
+	-- Example functionality of how to link in to other in game systems
+	if item.itemType == "Weapon" then
+		-- EquipmentService.EquipWeapon(item)
+	elseif item.itemType == "Armour" then
+		-- EquipmentService.EquipArmour(item)
+	elseif item.itemType == "Consumable" then
+		-- ConsumableService.ConsumeItem(item)
+	elseif item.itemType == "Material" then
+		-- CraftingService.CraftItem(item)
+	elseif item.itemType == "QuestItem" then
+		-- QuestService.IncrementQuest(item)
+	else
+		-- Item has no item type, add handling here
+	end
+end
+```
