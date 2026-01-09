@@ -20,6 +20,7 @@ A comprehensive inventory and item management system for Roblox, built with scal
 - **Type-Safe Item Definitions**: Weapons, consumables, materials, armour, and quest items
 - **Proximity-Based Pickups**: Intuitive interaction with world items whilst maintaining security
 - **Easy Item Implementation**: Easy to add new items with custom rarities, stats, types and more
+- **Custom Item Spawning**: Items can be spawned at location parts based on attributes and tags
 
 ### Architecture
 - **Server-Authoritative**: All game logic validated server-side to prevent exploits
@@ -71,7 +72,8 @@ Items are created in the following way, with attributes such as *equipSlot* and 
 #### If you want it to be spawnable:
 3. Add a Part to Workspace (I recommend under a Folder such as Workspace/Items/SpawnLocations)
 4. Make sure Part is Anchored and place at desired location
-5. Set attributes on item:
+5. Make sure Part has Tag `ItemSpawn`
+6. Set attributes on item:
 - `Id`: `wooden_sword` (must match ItemData)
 - `Quantity`: `1` (optional, default: 1)
 - `PickupMode`: `"Shared"`| `"Respawning"` | `"Instanced"` (see definitions above, default Shared)
