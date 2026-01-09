@@ -1,4 +1,5 @@
 # Modular Inventory & Item System
+Full demonstrational video here: https://www.youtube.com/watch?v=OqAO7dtYn8w
 
 <p align="left">
   <img src="media/inventory.png" width="400" alt="Preview">
